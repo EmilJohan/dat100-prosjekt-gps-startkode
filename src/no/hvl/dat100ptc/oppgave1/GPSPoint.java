@@ -5,74 +5,83 @@ import no.hvl.dat100ptc.TODO;
 public class GPSPoint {
 
 	// TODO - objektvariable
-		
+
+		private int time;
+		private double latitude;
+		private double longitude;
+		private double elevation;
+
+	
+
 	public GPSPoint(int time, double latitude, double longitude, double elevation) {
-
-		// TODO - konstruktør
-
-		// Fjern linjene med throw new etterhvert som metodene implementeres
-		throw new UnsupportedOperationException(TODO.construtor("GPSPoint"));
+		
+		this.time = time;
+		this.latitude = latitude; 
+		this.longitude = longitude;
+		this.elevation = elevation;
 
 	}
 
+
+	
+	
 	// TODO - get/set metoder
 	public int getTime() {
+		return time;
 		
-		throw new UnsupportedOperationException(TODO.method());
-		
+//		throw new UnsupportedOperationException(TODO.method());
+	
 	}
 
 	public void setTime(int time) {
+         this.time = time; 
 				
-		throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	public double getLatitude() {
-		
-		throw new UnsupportedOperationException(TODO.method());
+		return latitude;
 		
 	}
 
 	public void setLatitude(double latitude) {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		this.latitude = latitude;
 		
 	}
 
 	public double getLongitude() {
+		return longitude;
 		
-		throw new UnsupportedOperationException(TODO.method());
 		
 	}
 
 	public void setLongitude(double longitude) {
+		this.longitude = longitude;
 		
-		throw new UnsupportedOperationException(TODO.method());
 		
 	}
 
 	public double getElevation() {
-		
-		throw new UnsupportedOperationException(TODO.method());
+		return elevation;
+
 		
 	}
 
 	public void setElevation(double elevation) {
+		this.elevation = elevation;
 		
-		throw new UnsupportedOperationException(TODO.method());
 		
 	}
 	
 	public String toString() {
 		
 		String str;
+	//	str = (Integer.toString(time) + " (" + Double.toString(latitude) + "," + Double.toString(longitude) + ") " + Double.toString(elevation) + " \n");
+	//	return str;
 		
-		// TODO - start
-
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO - slutt
+		return Integer.toString(time) + " (" + Double.toString(latitude) + "," + Double.toString(longitude)
+		+ ") " + Double.toString(elevation) + "\n";
 		
 	}
 }

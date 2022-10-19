@@ -45,13 +45,22 @@ public class ShowSpeed extends EasyGraphics {
 
 		// get segments speeds from the GPS computer object		
 		double[] speeds = gpscomputer.speeds();
-
 		int x = MARGIN,y;
-
-		// TODO - START
+		int i;
+		int average = speeds.length;
+		for (i = 0; i<gpscomputer.speeds().length;i++) {
+			
 		
-		throw new UnsupportedOperationException(TODO.method());
-	
-		// TODO - SLUTT
+		       Double wowee = new Double(speeds[i]);
+		       int height = wowee.intValue();
+		
+		setColor(255,0,0);
+		drawLine( x, ybase-40, x, -height +210);
+		
+		x += 2;
+		}
+		setColor(0,0,169);
+		drawLine(MARGIN,average,x,average);
 	}
+
 }
